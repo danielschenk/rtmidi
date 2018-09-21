@@ -1,0 +1,12 @@
+{
+    "name": "rtmidi",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thestk/rtmidi.git",
+        "branch": "v3.0.0"
+    },
+    "platform": "native",
+    "build": {
+        "extraScript": "rtmidi.py"
+    }
+}
