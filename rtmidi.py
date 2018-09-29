@@ -1,6 +1,7 @@
 #!python
 
 import platform
+import sys
 
 Import('env')
 
@@ -22,7 +23,7 @@ if platform.system() == 'Darwin':
         '__MACOSX_CORE__',
     ]
 else:
-    raise Exception('Platform for RtMidi not configured or not supported')
+    print >> sys.stderr, 'Warning: Platform for RtMidi not configured or not supported'
 
 env.Append(CDEFINES=symbols)
 env.Append(CPPDEFINES=symbols)
